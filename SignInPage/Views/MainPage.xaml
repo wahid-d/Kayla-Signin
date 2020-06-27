@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="SignInPage.Views.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="FillAndExpand">
+            <Label VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Start"
+                   Text="Login"
+                   FontAttributes="Bold"
+                   FontSize="36"
+                   Margin="20,0"/>
+
+        </StackLayout>
+        <StackLayout VerticalOptions="StartAndExpand"
+                     HorizontalOptions="FillAndExpand">
+            <Label VerticalOptions="StartAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   Text="username"
+                   Margin="10,0"/>
+            <Entry VerticalOptions="StartAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="10,0,10,10"
+                   Placeholder="enter your username"
+                   x:Name="username"/>
+            <Label VerticalOptions="StartAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   Text="password"
+                   Margin="10,0"/>
+            <Entry VerticalOptions="StartAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="10,0"
+                   Placeholder="enter your password"
+                   x:Name="password"/>
+            <Button VerticalOptions="StartAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Text="sign up"
+                    Margin="10,-10"
+                    Clicked="Button_Clicked"/>
+
+            <Button VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Login"
+                    FontAttributes="Bold"
+                    FontSize="24"
+                    TextColor="Black"
+                    Clicked="LoginClicked"/>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

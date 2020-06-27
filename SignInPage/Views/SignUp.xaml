@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignInPage.Views.SignUp">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="FillAndExpand">
+                <Label VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       Text="Sign Up"
+                       FontAttributes="Bold"
+                       FontSize="36"
+                       Margin="20,0"/>
+
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         Margin="20,0">
+                <Label VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       Text="username"/>
+                <Entry VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="enter your username"
+                       x:Name="username"/>
+                <Label VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       Text="email"/>
+                <Entry VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="enter your email"
+                       x:Name="email"/>
+                <Label VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       Text="enter your password"/>
+                <Entry VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="enter your password"
+                       x:Name="password"/>
+                <Label VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       Text="confirm password"/>
+                <Entry VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="confirm your password"
+                       x:Name="confirm"/>
+
+            </StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand"
+                         HorizontalOptions="FillAndExpand">
+                <Button VerticalOptions="StartAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Sign Up"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        Clicked="SignupClicked"/>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
